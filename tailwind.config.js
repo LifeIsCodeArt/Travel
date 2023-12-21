@@ -13,6 +13,9 @@ module.exports = {
         'travelImage': 'url(@/assets/images/main-img.png)',
         'tutorialImage1': 'url(@/assets/images/Tutorial/Tutorial-photo-1.png)',
         'tutorialImage2': 'url(@/assets/images/Tutorial/Tutorial-photo-2.png)',
+        'linesImage1': 'url(@/assets/images/explore-bg.png)',
+        'exploreImage1': 'url(@/assets/images/explore-bg.png)',
+        'countryImage1': 'url(@/assets/images/Country/country.jpg)',
       },
     }
   },
