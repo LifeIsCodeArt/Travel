@@ -21,6 +21,25 @@ export const useMenuItemsStore = defineStore('MenuItemsStore', () => {
         }
     ])
 
+    const MenuItemsFooter = ref([
+        {
+            id:1,
+            name: 'About'
+        },
+        {
+            id:2,
+            name: 'Pricing'
+        },
+        {
+            id:3,
+            name: 'Company'
+        },
+        {
+            id:4,
+            name: 'Blog'
+        }
+    ])
+
     const countItems = ref([
         {
             id:1,
@@ -39,5 +58,24 @@ export const useMenuItemsStore = defineStore('MenuItemsStore', () => {
         },
 
     ])
-    return {MenuItems,countItems}
+
+   const footerIcons = ref([
+       {
+           id:1,
+           imageLink:'/src/assets/icons/Footer%20icons/Google.png',
+           description: 'Google'
+       },
+       {
+           id:2,
+           imageLink:'/src/assets/icons/Footer%20icons/Linkedin.png',
+           description: 'Linkedin'
+       },
+       {
+           id:3,
+           imageLink:'/src/assets/icons/Footer%20icons/Facebook.png',
+           description: 'Facebook'
+       },
+   ])
+
+    return {MenuItems,countItems,MenuItemsFooter,footerIcons}
 })

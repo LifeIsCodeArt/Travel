@@ -5,6 +5,7 @@ import {computed} from "vue";
 import TheHeader from "@/components/TheHeader.vue";
 import ItemCount from "@/components/ItemsCount.vue"
 import TheBenefits from "@/components/TheBenefits.vue"
+import TheFooter from "@/components/TheFooter.vue"
 
 const store = useBenefitItemsStore()
 
@@ -255,9 +256,9 @@ const benefitItems = computed(()=> store.BenefitItems)
 
                 <div class="w-[370px] flex flex-col">
 
-                    <img src="../assets/images/Gallery/photo-gallery-5.png" alt="" class="">
+                    <img src="../assets/images/Gallery/photo-gallery-5.png" alt="" class="pb-[30px]">
 
-                    <img src="../assets/images/Gallery/photo-gallery-6.jpg" alt="" class="w-[370px] h-[370px]">
+                    <img src="../assets/images/Gallery/photo-gallery-6.png" alt="" class="w-[370px] h-[370px]">
 
                 </div>
 
@@ -266,6 +267,99 @@ const benefitItems = computed(()=> store.BenefitItems)
         </div>
 
     </section>
+
+    <section class="h-[1432px] w-[1920px] bg-[#DCE8F2]">
+
+        <div class="pt-[119px] pl-[387px] flex flex-col">
+
+            <h1 class="text-[#010A20] text-[60px] leading-[90px]">
+                Getting there
+            </h1>
+
+            <div class="mt-[60px]">
+
+                <div class="relative flex flex-col pl-[50px] ml-[20px] h-[220px] border-l-2 border-[#15143966] relative">
+                      
+                    <div class="absolute bg-red-600 w-[45px] h-[45px] rounded-[50%] text-white text-[22px] leading-[37px] top-[-1px] left-[-23px] flex justify-center items-center">1</div>
+                    
+                    <div class="text-[26.4px] font-semibold text-[#010A20]">
+                        Bookings your flights
+                    </div>
+
+                    <div class="w-[1038px] text-[23.4px] leading-[38.1px] mt-[28px] opacity-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+                      Sed euismod orci dictum faucibus malesuada.
+                      Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
+                    </div>
+
+                </div>
+
+              <div class="relative flex flex-col pl-[50px] ml-[20px] h-[540px] border-l-2 border-[#15143966] relative">
+
+                  <div class="absolute bg-red-600 w-[45px] h-[45px] rounded-[50%] text-white text-[22px] leading-[37px] top-[-1px] left-[-23px] flex justify-center items-center">2</div>
+
+                  <div class="text-[26.4px] font-semibold text-[#010A20]">
+                      Bookings your flights
+                  </div>
+
+                  <div class="w-[1038px] text-[23.4px] leading-[38.1px] mt-[28px] mb-[94px] opacity-40">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+                      Sed euismod orci dictum faucibus malesuada.
+                      Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.
+                  </div>
+
+                  <div class="flex">
+
+                      <img src="@/assets/images/motorcycle.jpg" alt="" class="w-[250px] h-[165px] rounded">
+
+                      <div class="flex flex-col ml-[45.5px]">
+
+                          <div class="text-[26.4px] font-semibold text-[#010A20]">
+                              Bookings your flights
+                          </div>
+
+                          <div class="w-[446px] text-[23.4px] leading-[38.1px] mt-[12.9px] opacity-40">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Phasellus dapibus mauris in lectus tempus, eget tincidunt.
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+
+                <div class="relative flex flex-col">
+
+                </div>
+
+            </div>
+
+            <div class="relative flex flex-col pl-[50px] ml-[20px] relative">
+
+                <div class="absolute bg-red-600 w-[45px] h-[45px] rounded-[50%] text-white text-[22px] leading-[37px] top-[-3px] left-[-22px] flex justify-center items-center">3</div>
+
+                <div class="text-[26.4px] font-semibold text-[#010A20]">
+                    Planning your experiences
+                </div>
+
+                <div class="w-[1008px] text-[23.4px] leading-[38.1px] mt-[28px] mb-[17px] opacity-40">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+                </div>
+
+                <button class="w-[210px] h-[64px] py-[16px] px-[24px] text-[18px] text-white font-roboto font-normal leading-[27px] bg-[#DD2242] rounded-[32px]">
+                    Learn More
+                </button>
+
+          </div>
+
+        </div>
+
+    </section>
+
+    <TheFooter></TheFooter>
 </template>
 
 <style scoped>
