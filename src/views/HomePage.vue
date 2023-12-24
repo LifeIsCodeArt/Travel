@@ -13,29 +13,31 @@ const benefitItems = computed(()=> store.BenefitItems)
 </script>
 
 <template>
+  <div class="2xl:min-w-[120rem] flex flex-col items-center justify-center max-xl:min-w-[80rem] border-2 border-green-400">
+    <section class="bg-travelImage 2xl:min-w-[120rem] bg-no-repeat bg-auto h-[67.5rem] z-[10] relative bg-center max-xl:min-w-[80rem] border-2 border-red-400">
+        <div class="absolute min-w-full h-[67.5rem] bg-black opacity-25 z-[-1]"></div>
+    <div class=" flex flex-col">
+            <TheHeader class="z-[10]"></TheHeader>
+            <div class="mt-[150px] mb-[300px] flex">
+                  <ItemCount/>
+            </div>
+            <div class="flex w-full pl-[277px]">
+                <div class="2xl:min-w-[1225px] h-[210px] flex  items-center relative xl:min-w-[925px]">
+                    <div class="absolute min-w-full h-full bg-black opacity-50 z-[-1]">
 
-    <section class="bg-travelImage bg-auto min-w-[120rem] h-[67.5rem] z-[10] relative">
-        <div class="absolute min-w-[120rem] h-[67.5rem] bg-black opacity-25 z-[-1]"></div>
-        <TheHeader class="z-[10]"></TheHeader>
-        <div class="mt-[150px] mb-[300px] flex">
-                <ItemCount/>
-        </div>
-        <div class="flex w-full pl-[277px]">
-            <div class="w-[1225px] h-[210px] flex  items-center relative">
-                <div class="absolute w-full h-full bg-black opacity-50 z-[-1]">
-
-                </div>
-                <div class="z-[10]  w-full  flex items-center justify-around">
-                    <TheBenefits v-for="benefit in benefitItems" :benefit="benefit" :key="benefit.id"/>
-                </div>
+                    </div>
+                    <div class="z-[10] w-full  flex items-center justify-around">
+                        <TheBenefits v-for="benefit in benefitItems" :benefit="benefit" :key="benefit.id"/>
+                    </div>
            </div>
            <div class="h-[210px]">
                <img src="../assets/images/beach-image.png" alt="" class="h-[210px] w-[417px]">
            </div>
         </div>
+    </div>
     </section>
 
-    <section class="h-[764px] min-w-[120rem] bg-tutorialImage1 bg-cover bg-no-repeat bg-center relative z-10">
+    <section class="h-[764px] min-w-full bg-tutorialImage1 bg-cover bg-no-repeat bg-center relative z-10 border-2 border-blue-400">
         <div class="absolute w-full h-full bg-[#010A20] opacity-90 z-[-1]"></div>
 
           <div class="pt-[207px] flex justify-center items-center">
@@ -60,7 +62,7 @@ const benefitItems = computed(()=> store.BenefitItems)
           </div>
     </section>
 
-    <section class="h-[871px] min-w-[120rem] bg-tutorialImage2 bg-cover bg-no-repeat bg-center relative z-10">
+    <section class="h-[871px] min-w-full bg-tutorialImage2 bg-cover bg-no-repeat bg-center relative z-10 border-2 border-black">
         <div class="absolute w-full h-full bg-[#010A20] opacity-90 z-[-1]"></div>
 
         <div class="pt-[106px] flex justify-center items-center">
@@ -85,12 +87,12 @@ const benefitItems = computed(()=> store.BenefitItems)
         </div>
     </section>
 
-    <section class="h-[1414px] min-w-[120rem] bg-exploreImage1 flex justify-center">
+    <section class="h-[1414px] min-w-full bg-exploreImage1 bg-no-repeat bg-center flex justify-center border-2 border-yellow-400">
             <h1 class="pt-[127px] font-semibold text-[50px] leading-[75px]">Explore Our Secrets</h1>
             <!--items for carousel-->
     </section>
 
-    <section class="min-w-[120rem] h-[794px] bg-exploreImage1 bg-bottom relative z-[10] flex justify-center">
+    <section class="min-w-full h-[794px] bg-exploreImage1 bg-bottom bg-no-repeat relative z-[10] flex justify-center border-2 border-violet-400">
         <div class="absolute w-full h-full bg-[#020C21] opacity-90"></div>
         <div class="flex flex-col items-center pt-[201px] z-[10]">
 
@@ -143,7 +145,7 @@ const benefitItems = computed(()=> store.BenefitItems)
         </div>
     </section>
   
-    <section class="w-[1920px] h-[821px] flex items-center justify-center relative">
+    <section class="w-[1920px] h-[821px] flex items-center justify-center relative border-2 border-brown-400">
 
         <div class="absolute  bg-linesImage1">
 
@@ -171,7 +173,7 @@ const benefitItems = computed(()=> store.BenefitItems)
 
     </section>
 
-    <section class="w-[1920px] h-[1476px] bg-countryImage1 bg-cover bg-center relative z-[10] flex flex-col items-center">
+    <section class="w-[1920px] h-[1476px] bg-countryImage1 bg-no-repeat bg-cover bg-center relative z-[10] flex flex-col items-center border-2 border-orange-400">
         <div class="absolute w-full h-full bg-[#010A20] opacity-50 z-[-1]"></div>
       
         <div class="w-[1056px] pt-[142px] pb-[87.2px] text-white text-center text-[42px] leading-[50px] font-roboto font-semibold flex justify-center items-center">
@@ -358,8 +360,8 @@ const benefitItems = computed(()=> store.BenefitItems)
         </div>
 
     </section>
-
     <TheFooter></TheFooter>
+  </div>
 </template>
 
 <style scoped>
