@@ -13,15 +13,15 @@ const benefitItems = computed(()=> store.BenefitItems)
 </script>
 
 <template>
-  <div class="2xl:min-w-[120rem] flex flex-col items-center justify-center max-xl:min-w-[80rem] border-2 border-green-400">
-    <section class="bg-travelImage 2xl:min-w-[120rem] bg-no-repeat bg-auto h-[67.5rem] z-[10] relative bg-center max-xl:min-w-[80rem] border-2 border-red-400">
+  <div class="2xl:min-w-[1440px] margin flex flex-col items-center justify-center max-xl:min-w-[70rem] border-2 border-green-400">
+    <section class="bg-travelImage w-full bg-no-repeat bg-auto h-[67.5rem] z-[10] relative bg-center  border-2 border-red-400">
         <div class="absolute min-w-full h-[67.5rem] bg-black opacity-25 z-[-1]"></div>
     <div class=" flex flex-col">
             <TheHeader class="z-[10]"></TheHeader>
             <div class="mt-[150px] mb-[300px] flex">
                   <ItemCount/>
             </div>
-            <div class="flex w-full pl-[277px]">
+            <div class="flex min-w-full pl-[252px] max-xl:pl-0">
                 <div class="2xl:min-w-[1225px] h-[210px] flex  items-center relative xl:min-w-[925px]">
                     <div class="absolute min-w-full h-full bg-black opacity-50 z-[-1]">
 
@@ -30,27 +30,27 @@ const benefitItems = computed(()=> store.BenefitItems)
                         <TheBenefits v-for="benefit in benefitItems" :benefit="benefit" :key="benefit.id"/>
                     </div>
            </div>
-           <div class="h-[210px]">
+           <div class="h-[210px] max-2xl:hidden flex items-center justify-center">
                <img src="../assets/images/beach-image.png" alt="" class="h-[210px] w-[417px]">
            </div>
         </div>
     </div>
     </section>
 
-    <section class="h-[764px] min-w-full bg-tutorialImage1 bg-cover bg-no-repeat bg-center relative z-10 border-2 border-blue-400">
+    <section class="h-[764px] min-w-full bg-tutorialImage1 bg-cover bg-no-repeat bg-center relative z-10 border-2 border-blue-400 max-xl:h-auto">
         <div class="absolute w-full h-full bg-[#010A20] opacity-90 z-[-1]"></div>
 
-          <div class="pt-[207px] flex justify-center items-center">
+          <div class="pt-[207px] flex justify-center items-center max-xl:flex-col max-xl:pt-[100px] max-xl:pb-[100px]">
 
             <img src="../assets/images/Tutorial/Tutorial-photo-1.png" alt="" class="">
 
-            <div class="flex flex-col w-[480px] ml-[130px]">
+            <div class="flex flex-col w-[480px] ml-[130px] max-xl:ml-0 max-xl:items-center max-xl:mt-[30px]">
 
-                <div class="text-[42px]  text-white font-roboto font-semibold">
+                <div class="text-[42px]  text-white font-roboto font-semibold max-xl:text-center">
                     The walkways of Indonesia spellbind
                 </div>
 
-                <div class="w-[407px] text-[18px] text-[#E0E0E0] font-roboto font-normal leading-[27px] mt-[10px] mb-[32px]">
+                <div class="w-[407px] text-[18px] text-[#E0E0E0] font-roboto font-normal leading-[27px] mt-[10px] mb-[32px] max-xl:text-center">
                     Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.
                 </div>
 
@@ -62,18 +62,18 @@ const benefitItems = computed(()=> store.BenefitItems)
           </div>
     </section>
 
-    <section class="h-[871px] min-w-full bg-tutorialImage2 bg-cover bg-no-repeat bg-center relative z-10 border-2 border-black">
+    <section class="h-[871px] min-w-full bg-tutorialImage2 bg-cover bg-no-repeat bg-center relative z-10 border-2 border-black max-xl:h-auto">
         <div class="absolute w-full h-full bg-[#010A20] opacity-90 z-[-1]"></div>
 
-        <div class="pt-[106px] flex justify-center items-center">
+        <div class="pt-[106px] flex justify-center items-center max-xl:flex-col max-xl:pt-[100px] max-xl:pb-[100px]">
 
-                <div class="flex flex-col w-[480px] mr-[134px]">
+                <div class="flex flex-col w-[480px] mr-[134px] max-xl:mr-0 max-xl:items-center max-xl:mb-[30px]">
 
-                <div class="text-[42px] text-white font-roboto font-semibold">
+                <div class="text-[42px] text-white font-roboto font-semibold max-xl:text-center">
                     Perfect beaches exude relaxation and fun
                 </div>
 
-                <div class="w-[407px] text-[18px] text-[#E0E0E0] font-roboto font-normal leading-[27px] mt-[10px] mb-[32px]">
+                <div class="w-[407px] text-[18px] text-[#E0E0E0] font-roboto font-normal leading-[27px] mt-[10px] mb-[32px] max-xl:text-center">
                     Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.
                 </div>
 
@@ -145,7 +145,7 @@ const benefitItems = computed(()=> store.BenefitItems)
         </div>
     </section>
   
-    <section class="w-[1920px] h-[821px] flex items-center justify-center relative border-2 border-brown-400">
+    <section class="min-w-full h-[821px] flex items-center justify-center relative max-2xl:w-0 max-2xl:min-w-full border-2 border-brown-400">
 
         <div class="absolute  bg-linesImage1">
 
@@ -173,8 +173,8 @@ const benefitItems = computed(()=> store.BenefitItems)
 
     </section>
 
-    <section class="w-[1920px] h-[1476px] bg-countryImage1 bg-no-repeat bg-cover bg-center relative z-[10] flex flex-col items-center border-2 border-orange-400">
-        <div class="absolute w-full h-full bg-[#010A20] opacity-50 z-[-1]"></div>
+    <section class="min-w-full h-[1476px] bg-countryImage1 bg-no-repeat bg-cover bg-center relative z-[10] flex flex-col items-center border-2 border-orange-400 max-2xl:w-0 max-2xl:min-w-full">
+        <div class="absolute min-w-full min-h-full bg-[#010A20] opacity-50 z-[-1]"></div>
       
         <div class="w-[1056px] pt-[142px] pb-[87.2px] text-white text-center text-[42px] leading-[50px] font-roboto font-semibold flex justify-center items-center">
             Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.
@@ -227,7 +227,7 @@ const benefitItems = computed(()=> store.BenefitItems)
 
     </section>
 
-    <section class="h-[1388px] w-[1920px] flex justify-center">
+    <section class="h-[1388px] min-w-full flex justify-center max-2xl:min-w-[80rem]">
 
         <div class="flex flex-col pt-[177px]">
 
@@ -270,9 +270,9 @@ const benefitItems = computed(()=> store.BenefitItems)
 
     </section>
 
-    <section class="h-[1432px] w-[1920px] bg-[#DCE8F2]">
+    <section class="h-[1432px] min-w-full bg-[#DCE8F2] max-2xl:w-0 max-2xl:min-w-full">
 
-        <div class="pt-[119px] pl-[387px] flex flex-col">
+        <div class="pt-[119px] pl-[387px] flex flex-col max-2xl:pl-[200px] max-xl:pl-0 max-2xl:pl-[30px]">
 
             <h1 class="text-[#010A20] text-[60px] leading-[90px]">
                 Getting there
@@ -365,5 +365,7 @@ const benefitItems = computed(()=> store.BenefitItems)
 </template>
 
 <style scoped>
-
+.margin{
+  margin: 0 auto;
+}
 </style>

@@ -13,10 +13,11 @@ const icons = computed(()=> store.footerIcons)
 
 <template>
 
-    <div class="min-w-[120rem]  max-xl:min-w-[64rem] max-sm:min-w-[39rem]">
-      <div class="bg-[#010A20] container w-full min-w-[120rem] pl-[70px] pr-[153px] flex items-center  max-xl:min-w-[64rem] max-xl:px-2 max-sm:w-0 max-sm:min-w-[38.87rem]">
+    <div class="w-full max-2xl:min-w-full max-2xl:w-0 max-sm:min-w-[39rem] border-2 border-red-400">
+      <div class="bg-[#010A20] container min-w-full min-w-[120rem] pl-[70px] pr-[153px] flex items-center  max-2xl:min-w-full max-2xl:w-0 max-2xl:pr-0 max-2xl:pl-0 max-xl:mr-0
+       max-sm:w-0 max-sm:min-w-[38.87rem] border-2 border-yellow-400">
         <div class="flex justify-center items-center ">
-          <img src="@/assets/icons/Footer-logo.png" alt="" class="w-[174px] h-[65px]">
+          <img src="@/assets/icons/Footer-logo.png" alt="" class="w-[174px] h-[65px] 2xl-max:min-w-[100px]">
         </div>
         <nav class="">
           <ul class="flex w-[400px] items-center justify-between ml-[124px]  mr-[720.5px] max-xl:hidden">
@@ -31,7 +32,7 @@ const icons = computed(()=> store.footerIcons)
             <FooterIconItem v-for="icon in icons" :path="icon" />
         </div>
 
-        <div class="flex items-center pl-[42px] justify-end text-[15px] text-white leading-[28px] tracking-[0.5px] font-semibold font-roboto max-xl:hidden">
+        <div class="flex items-center pl-[42px] justify-end text-[15px] text-white leading-[28px] tracking-[0.5px] font-semibold font-roboto max-2xl:hidden">
             Copyright © 2019
         </div>
 
